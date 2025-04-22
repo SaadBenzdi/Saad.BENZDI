@@ -47,30 +47,70 @@ const Hero = () => {
     return (
         <section className="relative min-h-screen flex items-center px-4 sm:px-6 lg:px-8 pt-20">
             <div className="max-w-7xl mx-auto w-full flex flex-col lg:flex-row items-center justify-between">
-                <div className="lg:flex-1 text-left z-10">
-                    <h2 className="text-[#9FE870] text-2xl mb-4">Hello, I'm</h2>
-                    <h1 className="text-6xl lg:text-7xl font-bold text-white mb-4">
-                        Youtuber
-                    </h1>
-                    <div className="text-gray-400 text-xl mb-6">
-                        Senior Web Developer From<br />
-                        New York
-                    </div>
-                    <button className="bg-[#9FE870] text-black px-8 py-3 rounded-full hover:bg-[#8FD860] transition-all duration-300">
+                <motion.div 
+                    className="lg:flex-1 text-left z-10"
+                    initial={{ opacity: 0, x: -50 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.8 }}
+                >
+                    <motion.h2 
+                        className="text-[#9FE870] text-2xl mb-4"
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ delay: 0.2, duration: 0.5 }}
+                    >
+                        Hello, I'm
+                    </motion.h2>
+                    <motion.h1 
+                        className="text-6xl lg:text-7xl font-bold text-white mb-4"
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ delay: 0.4, duration: 0.6 }}
+                    >
+                        Saad BENZDI
+                    </motion.h1>
+                    <motion.div 
+                        className="text-gray-400 text-xl mb-6"
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ delay: 0.6, duration: 0.5 }}
+                    >
+                        Web Developer From<br />
+                        Casablanca, Morocco
+                    </motion.div>
+                    <motion.button 
+                        className="bg-[#9FE870] text-black px-8 py-3 rounded-full hover:bg-[#8FD860] transition-all duration-300"
+                        initial={{ opacity: 0, scale: 0.8 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        transition={{ delay: 0.8, duration: 0.5 }}
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                    >
                         Let's Work
-                    </button>
-                </div>
+                    </motion.button>
+                </motion.div>
 
                 <div className="lg:flex-1 relative mt-10 lg:mt-0">
-                    {/* Background Circle */}
-                    <div className="absolute right-0 w-[500px] h-[500px] bg-[#9FE870] rounded-full opacity-20"></div>
-                    
-                    {/* Profile Image */}
-                    <img 
-                        src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3" 
-                        alt="Professional Developer" 
-                        className="relative z-10 h-[600px] object-cover"
-                    />
+                    {/* Circular frame with profile image */}
+                    <div className="relative mx-auto w-[400px] h-[400px]">
+                        {/* Background Circle */}
+                        <div className="absolute inset-0 w-full h-full bg-[#9FE870]/20 rounded-full"></div>
+                        
+                        {/* Border Circle */}
+                        <div className="absolute inset-0 w-full h-full rounded-full border-2 border-[#9FE870] z-10"></div>
+                        
+                        {/* Profile Image */}
+                        <img 
+                            src="images/ui/profile.png" 
+                            alt="Professional Developer" 
+                            className="absolute inset-0 w-full h-full object-cover object-center rounded-full z-0"
+                        />
+                        
+                        {/* Text at bottom of circle */}
+                        <div className="absolute bottom-0 left-0 right-0 text-center text-xs text-white tracking-widest z-20 transform translate-y-[90%]">
+                            <p className="curved-text">DEVELOPPEUR WEB</p>
+                        </div>
+                    </div>
 
                     {/* Social Icons */}
                     <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 flex space-x-4">
