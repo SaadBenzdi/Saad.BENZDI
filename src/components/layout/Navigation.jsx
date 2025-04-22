@@ -5,7 +5,29 @@ const Navigation = () => (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-[#0B1120]/80 backdrop-blur-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex justify-between items-center py-4">
-                <div className="text-[#9FE870] text-2xl font-bold">Saad BENZDI</div>
+                <motion.div 
+                    className="text-[#9FE870] text-2xl font-bold flex items-center"
+                    initial={{ opacity: 0, scale: 0.8 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.5 }}
+                    whileHover={{ scale: 1.05 }}
+                >
+                    <motion.img 
+                        src="images/ui/logoSB.png" 
+                        alt="Logo" 
+                        className="w-14 h-14 filter drop-shadow-[0_0_8px_rgba(159,232,112,0.6)]" 
+                        animate={{ 
+                            rotate: [0, 5, 0, -5, 0],
+                        }}
+                        transition={{ 
+                            repeat: Infinity, 
+                            repeatType: "loop", 
+                            duration: 6,
+                            ease: "easeInOut" 
+                        }}
+                    />
+                    <span className="ml-2 bg-gradient-to-r from-[#9FE870] to-[#63E6BE] text-transparent bg-clip-text"></span>
+                </motion.div>
                 
                 <div className="hidden md:flex items-center space-x-8">
                     <a href="#home" className="text-white hover:text-[#9FE870] transition-colors">Home</a>
@@ -55,13 +77,16 @@ const Navigation = () => (
                             </motion.a>
                         ))}
                     </div>
-                    <motion.button
-                        className="bg-[#9FE870] text-black px-6 py-2 rounded-full hover:bg-[#8FD860] transition-colors duration-300"
+                    <motion.a
+                        href="https://drive.google.com/file/d/1jjC1Ht6kTQAJz1nR5NnTJ84z_1NuXJ8A/view?usp=drive_link"
+                        className="bg-[#9FE870] text-black px-6 py-2 rounded-full hover:bg-[#8FD860] transition-colors duration-300 inline-block text-center"
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
+                        target="_blank"
+                        rel="noopener noreferrer"
                     >
                         Download CV
-                    </motion.button>
+                    </motion.a>
                 </div>
             </div>
         </div>
