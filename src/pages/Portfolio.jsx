@@ -12,6 +12,7 @@ import ContactBanner from '../components/sections/ContactBanner';
 // UI Components
 import ServiceCard from '../components/ui/ServiceCard';
 import SkillCard from '../components/ui/SkillCard';
+import Projects from '../components/sections/Projects';
 
 const Portfolio = () => {
     const { scrollYProgress } = useScroll();
@@ -94,6 +95,9 @@ const Portfolio = () => {
                         ))}
                     </div>
                 </section>
+                {/* Projects Section */}
+                <Projects />
+
 
                 {/* Contact Banner Section */}
                 <div className="max-w-7xl mx-auto">
