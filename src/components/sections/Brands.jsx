@@ -1,7 +1,18 @@
 import React from 'react';
 
 const Brands = () => {
-    const brands = ['FOXER', 'Kakerio', 'Magner', 'VONICA', 'BROG'];
+    const brands = [
+        'Web Development',
+        'UI/UX Design',
+        'Digital Marketing & SEO',
+        'Automatisation',
+        'Web Security & Optimization',
+        'Technical Consulting',
+        'Testing & Code Quality',
+        'Logo Creation & Brand Design',
+        'Video Editing'
+      ];
+    // ['Web Development', 'Design Logo', 'UI/UX Design', 'Digital Marketing', 'Consulting Tech','Automatisation','Sécurité & Performance Web','Tests & Qualité Logicielle','Editing video'];
     // Duplicate brands to create seamless loop
     const duplicatedBrands = [...brands, ...brands];
 
@@ -13,7 +24,7 @@ const Brands = () => {
                     {duplicatedBrands.map((brand, index) => (
                         <div
                             key={`${brand}-${index}`}
-                            className="flex-shrink-0 w-[200px] mx-8 text-2xl font-bold text-white opacity-30"
+                            className="flex-shrink-0 w-[250px] mx-16 text-2xl font-bold text-white opacity-30 whitespace-nowrap text-center"
                         >
                             {brand}
                         </div>
@@ -27,7 +38,7 @@ const Brands = () => {
                         transform: translateX(0);
                     }
                     100% {
-                        transform: translateX(calc(-200px * ${brands.length} - 16rem));
+                        transform: translateX(calc(-250px * ${brands.length} - 32rem));
                     }
                 }
                 

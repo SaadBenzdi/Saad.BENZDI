@@ -55,7 +55,7 @@ const Portfolio = () => {
         { name: 'LARAVEL', percentage: 97, icon: <img src="/images/skills/laravel.svg" alt="Laravel" className="w-full h-full" /> },
         { name: 'TAILWIND', percentage: 90, icon: <img src="/images/skills/tailwind.svg" alt="Tailwind" className="w-full h-full" /> },
         { name: 'REACT', percentage: 92, icon: <img src="/images/skills/react.svg" alt="React" className="w-full h-full" /> },
-        { name: 'MYSQL', percentage: 95, icon: <img src="/images/skills/mysql.svg" alt="Javascript" className="w-full h-full" /> }
+        { name: 'MYSQL', percentage: 95, icon: <img src="/images/skills/mysql-icon.svg" alt="Javascript" className="w-full h-full" /> }
     ];
 
     return (

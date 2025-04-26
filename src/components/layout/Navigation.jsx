@@ -31,11 +31,11 @@ const Navigation = () => (
                 
                 <div className="hidden md:flex items-center space-x-8">
                     <a href="#home" className="text-white hover:text-[#9FE870] transition-colors">Home</a>
-                    <a href="#about" className="text-white hover:text-[#9FE870] transition-colors">About</a>
                     <a href="#service" className="text-white hover:text-[#9FE870] transition-colors">Service</a>
-                    <a href="#portfolio" className="text-white hover:text-[#9FE870] transition-colors">Portfolio</a>
+                    <a href="#about" className="text-white hover:text-[#9FE870] transition-colors">About</a>
+                    <a href="#portfolio" className="text-white hover:text-[#9FE870] transition-colors">Project</a>
                     <a href="#blog" className="text-white hover:text-[#9FE870] transition-colors">Blog</a>
-                    <a href="#contact" className="text-white hover:text-[#9FE870] transition-colors">Contact</a>
+                    {/* <a href="#contact" className="text-white hover:text-[#9FE870] transition-colors">Contact</a> */}
                 </div>
 
                 <div className="flex items-center space-x-4">
