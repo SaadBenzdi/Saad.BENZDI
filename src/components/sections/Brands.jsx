@@ -1,54 +1,43 @@
 import React from 'react';
 
+const brands = [
+    'Web Development',
+    'UI/UX Design',
+    'Digital Marketing & SEO',
+    'Automatisation',
+    'Web Security & Optimization',
+    'Technical Consulting',
+    'Testing & Code Quality',
+    'Logo Creation & Brand Design',
+    'Video Editing'
+];
+
 const Brands = () => {
-    const brands = [
-        'Web Development',
-        'UI/UX Design',
-        'Digital Marketing & SEO',
-        'Automatisation',
-        'Web Security & Optimization',
-        'Technical Consulting',
-        'Testing & Code Quality',
-        'Logo Creation & Brand Design',
-        'Video Editing'
-      ];
-    // ['Web Development', 'Design Logo', 'UI/UX Design', 'Digital Marketing', 'Consulting Tech','Automatisation','Sécurité & Performance Web','Tests & Qualité Logicielle','Editing video'];
-    // Duplicate brands to create seamless loop
-    const duplicatedBrands = [...brands, ...brands];
+    // Duplicate for seamless scroll
+    const tickerBrands = [...brands, ...brands];
 
     return (
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 overflow-hidden">
-            <div className="relative">
-                {/* First row scrolling left */}
-                <div className="flex animate-scroll">
-                    {duplicatedBrands.map((brand, index) => (
-                        <div
-                            key={`${brand}-${index}`}
-                            className="flex-shrink-0 w-[250px] mx-16 text-2xl font-bold text-white opacity-30 whitespace-nowrap text-center"
-                        >
-                            {brand}
-                        </div>
-                    ))}
-                </div>
+        <div className="w-full bg-[#9FE870] py-3 overflow-hidden">
+            <div className="flex items-center whitespace-nowrap animate-brands-scroll">
+                {tickerBrands.map((brand, idx) => (
+                    <React.Fragment key={idx}>
+                        <span className="font-bold text-lg text-[#181c23] mx-6">{brand}</span>
+                        <img
+                            src="/images/ui/logoSB.png"
+                            alt="Logo"
+                            className="inline-block w-9 h-9 mx-2 filter drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)] animate-pulse hover:animate-spin transition-all duration-500"
+                            style={{ verticalAlign: 'middle' }}
+                        />
+                    </React.Fragment>
+                ))}
             </div>
-
-            <style jsx>{`
-                @keyframes scroll {
-                    0% {
-                        transform: translateX(0);
-                    }
-                    100% {
-                        transform: translateX(calc(-250px * ${brands.length} - 32rem));
-                    }
+            <style>{`
+                @keyframes brands-scroll {
+                    0% { transform: translateX(0); }
+                    100% { transform: translateX(-50%); }
                 }
-                
-                .animate-scroll {
-                    animation: scroll 20s linear infinite;
-                }
-
-                /* Optional: Pause animation on hover */
-                .animate-scroll:hover {
-                    animation-play-state: paused;
+                .animate-brands-scroll {
+                    animation: brands-scroll 30s linear infinite;
                 }
             `}</style>
         </div>

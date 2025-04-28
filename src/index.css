@@ -17,3 +17,17 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.outline-text {
+  color: #fff;
+  -webkit-text-stroke: 2px #000;
+  text-stroke: 2px #000;
+  font-weight: 900;
+}
+
+.outline-green {
+  color: transparent;
+  -webkit-text-stroke: 2px #9FE870;
+  text-stroke: 2px #9FE870;
+  font-weight: 900;
+}

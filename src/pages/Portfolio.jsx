@@ -13,6 +13,7 @@ import ContactBanner from '../components/sections/ContactBanner';
 import ServiceCard from '../components/ui/ServiceCard';
 import SkillCard from '../components/ui/SkillCard';
 import Projects from '../components/sections/Projects';
+import EducationExperience from '../components/sections/EducationExperience';
 
 const Portfolio = () => {
     const { scrollYProgress } = useScroll();
@@ -46,16 +47,38 @@ const Portfolio = () => {
             icon: <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
             </svg>
+        },
+        { 
+            title: 'Brand identity',
+            icon:<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10">
+            <path strokeLinecap="round" strokeLinejoin="round" d="m21 7.5-2.25-1.313M21 7.5v2.25m0-2.25-2.25 1.313M3 7.5l2.25-1.313M3 7.5l2.25 1.313M3 7.5v2.25m9 3 2.25-1.313M12 12.75l-2.25-1.313M12 12.75V15m0 6.75 2.25-1.313M12 21.75V19.5m0 2.25-2.25-1.313m0-16.875L12 2.25l2.25 1.313M21 14.25v2.25l-2.25 1.313m-13.5 0L3 16.5v-2.25" />
+          </svg>
+          
+        },
+        { 
+            title: 'Illustration',
+            icon: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" fill="currentColor" className="w-10 h-10">
+                <path d="M296 136l0-48 48 0 0 48-48 0zM288 32c-26.5 0-48 21.5-48 48l0 4L121.6 84C111.2 62.7 89.3 48 64 48C28.7 48 0 76.7 0 112s28.7 64 64 64c25.3 0 47.2-14.7 57.6-36l66.9 0c-58.9 39.6-98.9 105-104 180L80 320c-26.5 0-48 21.5-48 48l0 64c0 26.5 21.5 48 48 48l64 0c26.5 0 48-21.5 48-48l0-64c0-26.5-21.5-48-48-48l-3.3 0c5.9-67 48.5-123.4 107.5-149.1c8.6 12.7 23.2 21.1 39.8 21.1l64 0c16.6 0 31.1-8.4 39.8-21.1c59 25.7 101.6 82.1 107.5 149.1l-3.3 0c-26.5 0-48 21.5-48 48l0 64c0 26.5 21.5 48 48 48l64 0c26.5 0 48-21.5 48-48l0-64c0-26.5-21.5-48-48-48l-4.5 0c-5-75-45.1-140.4-104-180l66.9 0c10.4 21.3 32.3 36 57.6 36c35.3 0 64-28.7 64-64s-28.7-64-64-64c-25.3 0-47.2 14.7-57.6 36L400 84l0-4c0-26.5-21.5-48-48-48l-64 0zM88 376l48 0 0 48-48 0 0-48zm416 48l0-48 48 0 0 48-48 0z"/>
+            </svg>
         }
     ];
 
     const skills = [
-        { name: 'WORDPRESS', percentage: 98, icon: <img src="/images/skills/wordpress.svg" alt="wordpress" className="w-full h-full" /> },
-        { name: 'FIGMA', percentage: 100, icon: <img src="/images/skills/figma.svg" alt="Figma" className="w-full h-full" /> },
         { name: 'LARAVEL', percentage: 97, icon: <img src="/images/skills/laravel.svg" alt="Laravel" className="w-full h-full" /> },
-        { name: 'TAILWIND', percentage: 90, icon: <img src="/images/skills/tailwind.svg" alt="Tailwind" className="w-full h-full" /> },
         { name: 'REACT', percentage: 92, icon: <img src="/images/skills/react.svg" alt="React" className="w-full h-full" /> },
-        { name: 'MYSQL', percentage: 95, icon: <img src="/images/skills/mysql-icon.svg" alt="Javascript" className="w-full h-full" /> }
+        { name: 'FIGMA', percentage: 100, icon: <img src="/images/skills/figma.svg" alt="Figma" className="w-full h-full" /> },
+        { name: 'TAILWIND', percentage: 90, icon: <img src="/images/skills/tailwind.svg" alt="Tailwind" className="w-full h-full" /> },
+        { name: 'WORDPRESS', percentage: 98, icon: <img src="/images/skills/wordpress.svg" alt="wordpress" className="w-full h-full" /> },
+        { name: 'MYSQL', percentage: 95, icon: <img src="/images/skills/mysql-icon.svg" alt="Mysql" className="w-full h-full" /> },
+        { name: 'MONGODB', percentage: 95, icon: <img src="/images/skills/mysql-icon.svg" alt="Javascript" className="w-full h-full" /> },
+        { name: 'PHP', percentage: 95, icon: <img src="/images/skills/mysql-icon.svg" alt="Javascript" className="w-full h-full" /> },
+        { name: 'JAVASCRIPT', percentage: 95, icon: <img src="/images/skills/mysql-icon.svg" alt="Javascript" className="w-full h-full" /> },
+        { name: 'PYTHON', percentage: 95, icon: <img src="/images/skills/mysql-icon.svg" alt="Javascript" className="w-full h-full" /> },
+        { name: 'BOOTSTRAP', percentage: 95, icon: <img src="/images/skills/mysql-icon.svg" alt="Javascript" className="w-full h-full" /> },
+        { name: 'GIT', percentage: 95, icon: <img src="/images/skills/mysql-icon.svg" alt="Javascript" className="w-full h-full" /> },
+        { name: 'UML', percentage: 95, icon: <img src="/images/skills/mysql-icon.svg" alt="Javascript" className="w-full h-full" /> },
+        { name: 'Adobe Illustrator', percentage: 95, icon: <img src="/images/skills/mysql-icon.svg" alt="Javascript" className="w-full h-full" /> },
+        { name: 'Adobe Premiere pro', percentage: 95, icon: <img src="/images/skills/mysql-icon.svg" alt="Javascript" className="w-full h-full" /> }
     ];
 
     return (
@@ -68,7 +91,7 @@ const Portfolio = () => {
                 style={{ y: backgroundY }}
             >
                 <div className="absolute inset-0 grid grid-cols-12 gap-4">
-                    {Array.from({ length: 144 }).map((_, i) => (
+                    {Array.from({ length: 400 }).map((_, i) => (
                         <div key={i} className="border border-gray-500"></div>
                     ))}
                 </div>
@@ -98,6 +121,8 @@ const Portfolio = () => {
                 {/* Projects Section */}
                 <Projects />
 
+                {/* Education & Experience Section */}
+                <EducationExperience />
 
                 {/* Contact Banner Section */}
                 <div className="max-w-7xl mx-auto">
