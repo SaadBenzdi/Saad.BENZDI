@@ -87,7 +87,7 @@ const Portfolio = () => {
         { name: 'ESPRESS', percentage: 95, icon: <img src="/images/skills/express.svg" alt="Adobe Premiere Pro" className="w-full h-full" /> },
         { name: 'SASS', percentage: 95, icon: <img src="/images/skills/sass.svg" alt="Adobe Premiere Pro" className="w-full h-full" /> },
         { name: 'Inertiajs', percentage: 95, icon: <img src="/images/skills/sass.svg" alt="Adobe Premiere Pro" className="w-full h-full" /> },
-        { name: 'Postman', percentage: 95, icon: <img src="/images/skills/postman.svg" alt="Adobe Premiere Pro" className="w-full h-full" /> },
+        { name: 'Postman', percentage: 95, icon: <img src="/images/skills/sass.svg" alt="Adobe Premiere Pro" className="w-full h-full" /> },
         { name: 'SCRUM', percentage: 95, icon: <img src="/images/skills/SCRUM.svg" alt="Adobe Premiere Pro" className="w-full h-full" /> },
         { name: 'JIRA', percentage: 95, icon: <img src="/images/skills/jira.svg" alt="Adobe Premiere Pro" className="w-full h-full" /> },
     ];
