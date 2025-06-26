@@ -25,7 +25,7 @@ const Brands = () => {
                         <img
                             src="/images/ui/logoSB.png"
                             alt="Logo"
-                            className="inline-block w-9 h-9 mx-2 filter drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)] animate-pulse hover:animate-spin transition-all duration-500"
+                            className="inline-block w-9 h-9 mx-2 filter drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)] animate-pulse hover:scale-110 transition-all duration-500"
                             style={{ verticalAlign: 'middle' }}
                         />
                     </React.Fragment>

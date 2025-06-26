@@ -25,15 +25,15 @@ const Portfolio = () => {
 
     const services = [
         { 
-            title: 'UI/UX Design',
-            icon: <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-            </svg>
-        },
-        { 
             title: 'Web Developer',
             icon: <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+            </svg>
+        },
+        { 
+            title: 'UI/UX Design',
+            icon: <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
             </svg>
         },
         { 
@@ -69,16 +69,27 @@ const Portfolio = () => {
         { name: 'FIGMA', percentage: 100, icon: <img src="/images/skills/figma.svg" alt="Figma" className="w-full h-full" /> },
         { name: 'TAILWIND', percentage: 90, icon: <img src="/images/skills/tailwind.svg" alt="Tailwind" className="w-full h-full" /> },
         { name: 'WORDPRESS', percentage: 98, icon: <img src="/images/skills/wordpress.svg" alt="wordpress" className="w-full h-full" /> },
-        { name: 'MYSQL', percentage: 95, icon: <img src="/images/skills/mysql-icon.svg" alt="Mysql" className="w-full h-full" /> },
-        { name: 'MONGODB', percentage: 95, icon: <img src="/images/skills/mysql-icon.svg" alt="Javascript" className="w-full h-full" /> },
-        { name: 'PHP', percentage: 95, icon: <img src="/images/skills/mysql-icon.svg" alt="Javascript" className="w-full h-full" /> },
-        { name: 'JAVASCRIPT', percentage: 95, icon: <img src="/images/skills/mysql-icon.svg" alt="Javascript" className="w-full h-full" /> },
-        { name: 'PYTHON', percentage: 95, icon: <img src="/images/skills/mysql-icon.svg" alt="Javascript" className="w-full h-full" /> },
-        { name: 'BOOTSTRAP', percentage: 95, icon: <img src="/images/skills/mysql-icon.svg" alt="Javascript" className="w-full h-full" /> },
-        { name: 'GIT', percentage: 95, icon: <img src="/images/skills/mysql-icon.svg" alt="Javascript" className="w-full h-full" /> },
-        { name: 'UML', percentage: 95, icon: <img src="/images/skills/mysql-icon.svg" alt="Javascript" className="w-full h-full" /> },
-        { name: 'Adobe Illustrator', percentage: 95, icon: <img src="/images/skills/mysql-icon.svg" alt="Javascript" className="w-full h-full" /> },
-        { name: 'Adobe Premiere pro', percentage: 95, icon: <img src="/images/skills/mysql-icon.svg" alt="Javascript" className="w-full h-full" /> }
+        { name: 'MYSQL', percentage: 95, icon: <img src="/images/skills/mysql2.svg" alt="Mysql" className="w-full h-full" /> },
+        { name: 'MONGODB', percentage: 95, icon: <img src="/images/skills/mongodb.svg" alt="Mongodb" className="w-full h-full" /> },
+        { name: 'PHP', percentage: 95, icon: <img src="/images/skills/php.svg" alt="PHP" className="w-full h-full" /> },
+        { name: 'JAVASCRIPT', percentage: 95, icon: <img src="/images/skills/js.svg" alt="JavaScript" className="w-full h-full" /> },
+        { name: 'PYTHON', percentage: 95, icon: <img src="/images/skills/python.svg" alt="Python" className="w-full h-full" /> },
+        { name: 'BOOTSTRAP', percentage: 95, icon: <img src="/images/skills/bootstrap.svg" alt="Bootstrap" className="w-full h-full" /> },
+        { name: 'GIT', percentage: 95, icon: <img src="/images/skills/git.svg" alt="Git" className="w-full h-full" /> },
+        { name: 'UML', percentage: 95, icon: <img src="/images/skills/uml.svg" alt="UML" className="w-full h-full" /> },
+        { name: 'Adobe Illustrator', percentage: 95, icon: <img src="/images/skills/adobe-illustrator.svg" alt="Adobe Illustrator" className="w-full h-full" /> },
+        { name: 'Adobe Premiere pro', percentage: 95, icon: <img src="/images/skills/adobe-premiere.svg" alt="Adobe Premiere Pro" className="w-full h-full" /> },
+        { name: 'JQUERY', percentage: 95, icon: <img src="/images/skills/jquery.svg" alt="Adobe Premiere Pro" className="w-full h-full" /> },
+        { name: 'NODEJS', percentage: 95, icon: <img src="/images/skills/nodejs.svg" alt="Adobe Premiere Pro" className="w-full h-full" /> },
+        { name: 'AJAX', percentage: 95, icon: <img src="/images/skills/.svg" alt="Adobe Premiere Pro" className="w-full h-full" /> },
+        { name: 'DOCKER', percentage: 95, icon: <img src="/images/skills/docker.svg" alt="Adobe Premiere Pro" className="w-full h-full" /> },
+        { name: 'COMPOSER', percentage: 95, icon: <img src="/images/skills/composer.svg" alt="Adobe Premiere Pro" className="w-full h-full" /> },
+        { name: 'ESPRESS', percentage: 95, icon: <img src="/images/skills/express.svg" alt="Adobe Premiere Pro" className="w-full h-full" /> },
+        { name: 'SASS', percentage: 95, icon: <img src="/images/skills/sass.svg" alt="Adobe Premiere Pro" className="w-full h-full" /> },
+        { name: 'Inertiajs', percentage: 95, icon: <img src="/images/skills/sass.svg" alt="Adobe Premiere Pro" className="w-full h-full" /> },
+        { name: 'Postman', percentage: 95, icon: <img src="/images/skills/postman.svg" alt="Adobe Premiere Pro" className="w-full h-full" /> },
+        { name: 'SCRUM', percentage: 95, icon: <img src="/images/skills/SCRUM.svg" alt="Adobe Premiere Pro" className="w-full h-full" /> },
+        { name: 'JIRA', percentage: 95, icon: <img src="/images/skills/jira.svg" alt="Adobe Premiere Pro" className="w-full h-full" /> },
     ];
 
     return (
